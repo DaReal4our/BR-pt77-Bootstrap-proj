@@ -10,16 +10,16 @@
     <body>
       
               <!-- Finsta Logo & Text -->
-      <nav class="navbar navbar-light bg-light">
+      <nav class="navbar navbar-light bg-light p-2">
           <a class="navbar-brand" href="#">
-            <i class="fa-brands fa-instagram"></i>
-            Finstagram
+            <h5><i class="fa-brands fa-instagram"></i>
+            Finstagram</h5>
           </a>
           
-        <div class="d-flex">
+        <div class="d-flex justify-content-around">
           <!-- CAP modal -->
           <!-- Button trigger modal -->
-          <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">
+          <button p type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">
             Create a new post
           </button>
 
@@ -29,9 +29,7 @@
               <div class="modal-content">
                 <div class="modal-header">
                   <h5 class="modal-title" id="exampleModalLabel">Create a new post</h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close" class="position-absolute top-0 end-0">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <!-- Textbox -->
                 <div class="modal-body">
@@ -55,34 +53,33 @@
           </div>
 
           <!-- Settings DD -->
-          <div class="btn-group pe-5 ps-3">
-            <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+          <div class="dropdown px-2">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               <i class="fa-solid fa-gear"></i>
             </button>
-            <ul class="dropdown-menu dropdown-menu-end">
-              <li><button class="dropdown-item" type="button">Profile</button></li>
-              <li><button class="dropdown-item" type="button">Accessibility</button></li>
-              <li><button class="dropdown-item" type="button">Privacy & Data</button></li>
-            </ul>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#">Profile</a>
+              <a class="dropdown-item" href="#">Accessibility</a>
+              <a class="dropdown-item" href="#">Privacy & Data</a>
+            </div>
           </div>
         </div>
       </nav>
 
       <!-- Layout Buttons -->
-      <div class="Cotainer"
-        <div>
+        <div class="Container">
           <div class="col d-flex justify-content-center text-ceter">
               <a href="index.html" class="mx-1"><i class="fa-solid fa-table-cells"></i></a>
               <a href="grid.html" class="mx-1"><i class="fa-solid fa-grip-lines-vertical"></i></a>
           </div>
         </div>
-
+      
       <!-- Vertical Post 1 -->
       <div class="Conatainer d-flex justify-content-center pb-5">
         <div class="col-4 border rounded">
             <div class="row p-1">
-              <h5>Post Title</h5>
-              <div class="d-flex justify-content-end">Date</div>
+              <h5 class="col">Post Title</h5>
+              <div class=" col d-flex justify-content-end">Date</div>
             </div>
             <img src="https://randomwordgenerator.com/img/picture-generator/55e3d5454a5bab14f1dc8460962e33791c3ad6e04e507441722872d69049cc_640.jpg" width="100%">
             <div class="p-1"><strong>1,500 Likes</strong>
@@ -152,7 +149,7 @@
               <h5>Post Title</h5>
               <div class="d-flex justify-content-end">Date</div>
             </div>
-            <img src="https://randomwordgenerator.com/img/picture-generator/55e6d7424250b10ff3d8992cc12c30771037dbf85257714d742d7dd0924a_640.jp" width="100%">
+            <img src="https://randomwordgenerator.com/img/picture-generator/55e6d7424250b10ff3d8992cc12c30771037dbf85257714d742d7dd0924a_640.jpg" width="100%">
             <div class="p-1"><strong>1,500 Likes</strong>
               <p>This is an example of a very good photo you can find on finstagram</p>
           
@@ -196,8 +193,9 @@
         </div>
       </div>
       
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+      <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>
     </body>
 </html>
